@@ -23,7 +23,7 @@ Inicialmente se muestra una vista en la que se puede observar unas Tabs vacías 
 ### Vista del Modal del Formulario de Nueva Recolección
 
 ![VISTA2!](./muta-demo-preview/2.png)
-Luego de presionar el botón "NUEVA ENTRADA" se mostrará el fomulario mencionado anteriormente como se puede observar en la imagen anterior. El botón de "CREAR REGISTRO" no será habilitado hasta que el formulario sea válido. Todos los campos son obligatorios. Los valores válidos son numéricos mayores que cero y con mínimo uno de los campos mayor que cero.
+Luego de presionar el botón "NUEVA ENTRADA" se mostrará el fomulario mencionado anteriormente como se puede observar en la imagen anterior. El botón de "CREAR REGISTRO" no será habilitado hasta que el formulario sea válido. Todos los campos son obligatorios. Los valores válidos son numéricos **mayores o iguales** que cero y con mínimo uno de los campos mayor que cero.
 
 ![VISTA3!](./muta-demo-preview/3.png)
 En caso de llenar el formulario incorrectamente, se mostrarán mensajes de error especificando en qué se equivocó el usuario al diligenciarlo como se puede ver en la captura anterior.
@@ -43,6 +43,6 @@ Así sería como se vería con más de una recolección creada. Se agregaron otr
 
 ### Vista del Detalle de las Recolecciones
 
-![VISTA7!](./muta-demo-preview/8.png)
+![VISTA7!](./muta-demo-preview/7.png)
 Al presionar click en una de las recolecciones de la tabla, se mostrará el detalle de la recolección seleccionada.
 **Nota: Se agregó un botón de eliminación en esta vista para remover las recolecciones que no se deseen.**
