@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular"), url(./Fonts/Inter-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: local("Inter-ExtraBold"),
+    url(./Fonts/Inter-ExtraBold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: local("Inter-SemiBold"),
+    url(./Fonts/Inter-SemiBold.otf) format("truetype");
+}
+
+.root {
+  font-family: "Inter-Regular", sans-serif;
+}
