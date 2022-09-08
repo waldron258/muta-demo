@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Muta Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este documento contiene la información necesaria para correr y navegar en el proyecto.
 
-## Available Scripts
+## Comandos
 
-In the project directory, you can run:
+### `npm install`
+
+Se instalarán todas las dependencias con este comando.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Corre el proyecto de manera local en el puerto 3000. URL: http://localhost:3000
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+### Vista Principal
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![VISTA1!](./muta-demo-preview/1.png)
+Inicialmente se muestra una vista en la que se puede observar unas Tabs vacías ya que no ha sido agregada una nueva recolección. Al presionar el botón "NUEVA ENTRADA" se abrirá un Modal que contiene un formulario para el registro de una nueva recolección.
+**Nota: Los items de la barra de navegación son estáticos. Tienen estilos aplicados.**
 
-### `npm run build`
+### Vista del Modal del Formulario de Nueva Recolección
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![VISTA2!](./muta-demo-preview/2.png)
+Luego de presionar el botón "NUEVA ENTRADA" se mostrará el fomulario mencionado anteriormente como se puede observar en la imagen anterior. El botón de "CREAR REGISTRO" no será habilitado hasta que el formulario sea válido. Todos los campos son obligatorios. Los valores válidos son numéricos mayores que cero y con mínimo uno de los campos mayor que cero.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![VISTA3!](./muta-demo-preview/3.png)
+En caso de llenar el formulario incorrectamente, se mostrarán mensajes de error especificando en qué se equivocó el usuario al diligenciarlo como se puede ver en la captura anterior.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![VISTA4!](./muta-demo-preview/4.png)
+Una vez llenado el formulario de manera correcta, el botón "CREAR REGISTRO" será habilitado para realizar la creación de la nueva recolección.
+**Nota: El Total a pagar se actualiza dependiendo a los datos ingresados por el usuario. Los valores de cada residuo son arbitrarios y se encuentran quemados en código para efectos de prueba.**
 
-### `npm run eject`
+### Vista Principal con Recolecciones Creadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![VISTA5!](./muta-demo-preview/5.png)
+Una vez creada la recolección, se mostratá una tabla que la contiene.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![VISTA6!](./muta-demo-preview/6.png)
+Así sería como se vería con más de una recolección creada. Se agregaron otros estados también arbitrarios quemados en el código para efectos de prueba.
+**Nota: Las recolecciones creadas son almacenadas en las Cookies. Esto se hizo con el fin de almacenar las recolecciones creadas incluso después de recargar la página. Del mismo modo, se hizo uso de Cookies para efectos de prueba.**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Vista del Detalle de las Recolecciones
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![VISTA7!](./muta-demo-preview/8.png)
+Al presionar click en una de las recolecciones de la tabla, se mostrará el detalle de la recolección seleccionada.
+**Nota: Se agregó un botón de eliminación en esta vista para remover las recolecciones que no se deseen.**
